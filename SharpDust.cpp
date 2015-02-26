@@ -1,6 +1,12 @@
+#include "Arduino.h"
 #include "SharpDust.h"
+#include "pins_arduino.h"
 
-SharpDustClass::begin(int led, int mea)
+SharpDustClass::SharpDustClass()
+{
+}
+
+void SharpDustClass::begin(int led, int mea)
 {
 	ledPin = led;
 	measurePin = mea;

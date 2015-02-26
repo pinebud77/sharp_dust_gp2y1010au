@@ -12,9 +12,10 @@ class SharpDustClass
 		int measurePin; 	//Analog pin for measurement
 		
 	public:
+		SharpDustClass();
 		void begin(int led, int mea);
 		float measure(void);
-}
+};
 
 extern SharpDustClass SharpDust;
 #endif	//__SHARP_DUST_H
